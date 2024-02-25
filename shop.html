@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سبد خرید</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/bootstrap.rtl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./shop.css">
+
+</head>
+<body>
+    <div id="shopBody">
+      <div class="  hedder-ban ">
+        <h6>تضمین قیمت و کیفیت با مبل استار</h6>
+      </div>
+      <div class="container-fluid second-hedder py-3">
+            <div class="container d-flex justify-content-between ">
+                <div class="col-6 col-lg-2  d-flex ">
+                    <div class="col-2 d-flex justify-content-center d-block d-xl-none">
+                        <img onclick="openMenu()" src="./img/img-hedder/icons8-menu-50 (1).png" class="w-75 h-75 align-self-center " alt="">
+                    </div>
+
+                    <div class="col-4  d-flex justify-content-center align-content-center ">
+                        <img class="w-75" src="./img/img-hedder/icons8-sofa-48.png" alt="">
+                    </div>
+                    <div class="col-6  d-flex  align-self-center  justify-content-start   ">
+                        <h5>مبل استار</h5> <br>
+                    </div>
+                </div>
+                <div class="col-6  d-none d-lg-flex justify-content-center input-search">
+                    <input type="search" class="ps-3" placeholder="جستجو در بیش از 1000 کالا ...">
+                    <div class="search-logo">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="col-5 col-lg-2  align-self-center d-flex justify-content-between items-hedder ">
+                    <div class="col-2 d-block d-lg-none">
+                        <img onclick="search()" src="./img/img-hedder/icons8-reserch-64.png" alt="" style="cursor: pointer;">
+                    </div>
+                    <div class="col-3 col-md-8 text-center login-parent" onclick="openLogin()">
+                        <img class="login-text" src="./img/img-hedder/icons8-user-32.png" alt="">
+                        <span class="d-none d-md-inline login-text">ورود/ثبت نام</span>
+                    </div>
+                    <div class="col-3    basket-parent">
+                      <div class="text-end ">
+                        <a href="#">
+                          <img class="" src="./img/img-hedder/icons8-cart-50.png" alt="">
+                        </a>
+                      </div>
+                        <div class="basket-text ">
+                          <div class="first">
+                            <span>۲ کالا</span>
+                          </div>
+                          <div class="not-products d-none flex-column ">
+                            <img src="./img/shop-basket/icons8-shopping-bag-64.png" alt="">
+                            <h6 class="mt-4" style="color:rgb(117, 117, 117);">سبد خرید شما خالی میباشد</h6>
+                          </div>
+                          <div class="all-main">
+                            <div class="mainn" id="firstMain">
+                              <div class="right">
+                                <img src="./img/products-img/1.jpg" alt="">
+                                <div class="col-12  d-flex justify-content-center ">
+                                  <div class="parent-box">
+                                    <button class="btn-pro" id="incrementButton"><i class="fa-solid fa-plus"></i></button>
+                                    <div id="numberBox">1</div>
+                                    <button class="btn-pro" id="decrementButton"><i class="fa-solid fa-minus"></i></i></button>
+                                  </div>                        
+                                </div> 
+                              </div>
+                              <div class="left">
+                                <div class="bin" onclick="deleteFmain()">
+                                  <img src="./img/shop-basket/icons8-recycle-bin-48 (1).png" alt="">
+                                </div>
+                                <h6>مبل راحتی مرداک</h6>
+                                <div class="d-flex align-self-center first mt-4">
+                                  <div class="color-div d-inline-block "></div>
+                                  <p>طوسی روشن</p>
+                                </div>
+                                <div class="d-flex align-self-center second ">
+                                  <img src="./img/shop-basket/icons8-truck-64 (2).png" alt="">
+                                  <p>باربری توسط مبل استار</p>
+                                </div>
+                                <div class="price d-flex flex-column mt-3">
+                                  <span>۳۵,۰۰۰,۰۰۰ تومان</span>
+                                  <span>۳۰,۰۰۰,۰۰۰ تومان</span>
+                                </div>
+                              </div>
+                            </div>
+  
+  
+  
+  
+                            <div class="mainn" id="secondMain">
+                              <div class="right">
+                                <img src="./img/card-slider/2.jfif" alt="">
+                                <div class="col-12  d-flex justify-content-center ">
+                                  <div class="parent-box">
+                                    <button class="btn-pro" id="incrementButtonn"><i class="fa-solid fa-plus"></i></button>
+                                    <div id="numberBoxx">1</div>
+                                    <button class="btn-pro" id="decrementButtonn"><i class="fa-solid fa-minus"></i></i></button>
+                                  </div>                        
+                                </div> 
+                              </div>
+                              <div class="left">
+                                <div class="bin" onclick="deleteSmain()">
+                                  <img src="./img/shop-basket/icons8-recycle-bin-48 (1).png" alt="">
+                                </div>
+                                <h6>مبل راحتی سام</h6>
+                                <div class="d-flex align-self-center first mt-4">
+                                  <div class="color-div d-inline-block "></div>
+                                  <p>طوسی روشن</p>
+                                </div>
+                                <div class="d-flex align-self-center second ">
+                                  <img src="./img/shop-basket/icons8-truck-64 (2).png" alt="">
+                                  <p>باربری توسط مبل استار</p>
+                                </div>
+                                <div class="price d-flex flex-column mt-3">
+                                  <span></span>
+                                  <span style="color:#000;">۳۰,۰۰۰,۰۰۰ تومان</span>
+                                </div>
+                              </div>
+                            </div>
+  
+  
+                          </div>
+                          <div class="footerr">
+                            <div class="right">
+                              <span>مبلغ قابل پرداخت</span>
+                              <span>۶۰,۰۰۰,۰۰۰ تومان</span>
+                            </div>
+                            <div class="left">
+                              <button type="submit">ثبت سفارش</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="fixedParagraph" class="container-fluid d-none d-xl-block menu-site">
+            <div class="container d-flex justify-content-between mt-4 menu-hedder">
+                <div class="col text-center pb-3">مبل راحتی <i class="fa-solid fa-chevron-down"></i>
+                    <div class="text">
+                        <img src="./img/img-hedder/icons8-triangle-48.png" alt="">
+                        <div class="items"><a href="#">تمام مبل های راحتی</a></div>
+                        <div class="items"><a href="#">مبل ال</a></div>
+                        <div class="items"><a href="#">مبل چستر</a></div>
+                    </div>
+                </div>
+                <div class="col text-center">مبل استیل <i class="fa-solid fa-chevron-down"></i>
+                    <div class="text">
+                        <img src="./img/img-hedder/icons8-triangle-48.png" alt="">
+                        <div class="items"><a href="#">تمام مبل های استیل</a></div>
+                        <div class="items"><a href="#">مبل کلاسیک</a></div>
+                    </div>
+                </div>
+                <div class="col text-center">مبل <i class="fa-solid fa-chevron-down"></i>
+                    <div class="text">
+                        <img src="./img/img-hedder/icons8-triangle-48.png" alt="">
+                        <div class="items"><a href="#">تمام مبل ها</a></div>
+                        <div class="items"><a href="#">مبل راحتی</a></div>
+                        <div class="items"><a href="#">مبل ال</a></div>
+                        <div class="items"><a href="#">مبل چستر</a></div>
+                        <div class="items"><a href="#">مبل استیل</a></div>
+                        <div class="items"><a href="#">مبل کلاسیک</a></div>
+                        <div class="items"><a href="#">مبل تخت شو</a></div>
+                    </div>
+                </div>
+                <div class="col text-center">سرویس خواب <i class="fa-solid fa-chevron-down"></i>
+                    <div class="text">
+                        <img src="./img/img-hedder/icons8-triangle-48.png" alt="">
+                        <ul id="menu">
+                            <li>تمامی سرویس خواب ها</li>
+                            <li>سرویس خواب نوزاد</li>
+                            <li>سرویس خواب یک نفره</li>
+                            <li>سرویس خواب سلطنتی</li>
+                            <li>تخت خواب <i class="fa-solid fa-caret-left"></i>
+                                <ul>
+                                    <li>تخت خواب یک نفره</li>
+                                    <li>تخت خواب دو نفره</li>
+                                    <li>تخت خواب دو طبقه</li>
+                                    <li>تخت خواب نوزاد</li>
+                                    <li>تخت خواب هوشمند</li>
+                                </ul>
+                            </li>
+                            <li>تشک</li>
+                        </ul>                    
+                    </div>
+                </div>
+                <div class="col text-center">مبلمان منزل <i class="fa-solid fa-chevron-down"></i>
+                    <div class="text">
+                        <img src="./img/img-hedder/icons8-triangle-48.png" alt="">
+                        <ul>
+                            <li>مبل <i class="fa-solid fa-caret-left"></i>
+                                <ul>
+                                    <li>مبل راحتی <i class="fa-solid fa-caret-left"></i>
+                                        <ul>
+                                            <li>مبل ال</li>
+                                            <li>مبل چستر</li>
+                                        </ul>
+                                    </li>
+                                    <li>میل استیل</li>
+                                    <li>مبل تخت شو</li>
+                                    <li>مبل کلاسیک</li>
+                                </ul>
+                            </li>
+                            <li>سرویس خواب <i class="fa-solid fa-caret-left"></i>
+                                <ul>
+                                    <li><a href="#">سرویس خواب لوکس</a></li>
+                                    <li><a href="#">سرویس خواب یکنفره</a></li>
+                                    <li><a href="#">سرویس خواب دو نفره</a></li>
+                                    <li><a href="#">سرویس خواب سلطنتی</a></li>
+                                    <li><a href="#">سرویس خواب نوزاد</a></li> 
+                                    <li><a href="#"> تخت خواب </a><i class="fa-solid fa-caret-left"></i>
+                                        <ul>
+                                            <li><a href="#"></a>تخت خواب یک نفره</li>
+                                            <li><a href="#">تخت خواب دو نفره</a></li>
+                                            <li><a href="#">تخت خواب دو طبقه</a></li>
+                                            <li><a href="#">تخت خواب نوزاد</a></li>
+                                            <li><a href="#">تخت خواب هوشمند</a></li>
+                                            <li><a href="#">تخت خواب سلطنتی</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">تشک</a></li>
+                                </ul>
+                            </li>
+                            <li>میز</li>
+                            <li>صندلی<i class="fa-solid fa-caret-left"></i>
+                                <ul>
+                                    <li><a href="#">صندلی راک</a></li>
+                                    <li><a href="#">صندلی لهستانی</a></li>
+                                    <li><a href="#">صندلی ماساژور</a></li>
+                                    <li><a href="#">صندلی تاشو</a></li>
+                                </ul>
+                            </li>
+                            <li>کمد</li>
+                            <li>فرش</li>
+                            <li>مبلمان فضای باز</li>
+                            <li>روشنایی <i class="fa-solid fa-caret-left"></i>
+                                <ul>
+                                    <li><a href="#">لوستر</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col text-center">تخت خواب <i class="fa-solid fa-chevron-down"></i>
+                    <div class="text">
+                        <img src="./img/img-hedder/icons8-triangle-48.png" alt="">
+                        <ul>
+                            <li>تخت خواب یک نفره</li>
+                            <li>تخت خواب دو نفره</li>
+                            <li>تخت خواب دو طبقه</li>
+                            <li>تخت خواب نوزاد</li>
+                            <li>تخت خواب هوشمند</li>
+                            <li>تخت خواب سلطنتی</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col text-center">میز <i class="fa-solid fa-chevron-down"></i>
+                    <div class="text">
+                        <img src="./img/img-hedder/icons8-triangle-48.png" alt="">
+                        <ul>
+                            <li>میز تلویزیون</li>
+                            <li>میز ناهار خوری</li>
+                            <li>میز جلو مبلی و عسلی</li>
+                            <li>آینه و میز کنسول</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col text-center">مبلمان اداری <i class="fa-solid fa-chevron-down"></i>
+                    <div class="text">
+                        <img src="./img/img-hedder/icons8-triangle-48.png" alt="">
+                        <ul>
+                            <li>تمامی مبلمان اداری</li>
+                            <li>صندلی اداری</li>
+                            <li>فایل و کمد اداری</li>
+                            <li>مبل اداری</li>
+                            <li>میز اداری</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col text-center"> دکوری <i class="fa-solid fa-chevron-down"></i>
+                    <div class="text">
+                        <img src="./img/img-hedder/icons8-triangle-48.png" alt="">
+                        <ul>
+                            <li><a href="#">ساعت</a></li>
+                            <li><a href="#">جاکفشی</a></li>
+                            <li><a href="#">کتابخانه چوبی</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menuHamberger" class="d-block d-xl-none">
+            <div class="hedder-menu">
+                <h5>منو</h5>
+                <img onclick="closeMenu()"  src="./img/img-hedder/icons8-close-30.png" alt="">
+            </div>
+            <div class="main-menu">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <a href="#">مبل راحتی</a>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="items"><a href="#">تمامی مبل های راحتی</a></div>
+                            <div class="items"><a href="#">مبل ال</a></div>
+                            <div class="items"><a href="#">مبل چستر</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <a href="#">مبل استیل</a>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="items"><a href="#">تمام مبل های استیل</a></div>
+                            <div class="items"><a href="#">مبل کلاسیک</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                         <a href="#">مبل</a>
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="items"><a href="#">تمام مبل ها</a></div>
+                            <div class="items"><a href="#">مبل راحتی</a></div>
+                            <div class="items"><a href="#">مبل ال</a></div>
+                            <div class="items"><a href="#">مبل چستر</a></div>
+                            <div class="items"><a href="#">مبل استیل</a></div>
+                            <div class="items"><a href="#">مبل کلاسیک</a></div>
+                            <div class="items"><a href="#">مبل تخت شو</a></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsefore" aria-expanded="false" aria-controls="flush-collapseThree">
+                           <a href="#">سرویس خواب</a>
+                          </button>
+                        </h2>
+                        <div id="flush-collapsefore" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <div class="items"><a href="#">تمامی سرویس خواب ها</a></div>
+                            <div class="items"><a href="#">سرویس خواب نوزاد</a></div>
+                            <div class="items"><a href="#">سرویس خواب یک نفره</a></div>
+                            <div class="items"><a href="#">سرویس خواب دو نفره</a></div>
+                            <div class="items"><a href="#">سرویس خواب سلطنتی</a></div>
+                            <div class="items"><a href="#">تشک</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
+                           <a href="#">تخت خواب</a>
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <div class="items"><a href="#">تمامی سرویس خواب</a></div>
+                            <div class="items"><a href="#">سرویس خواب نوزاد</a></div>
+                            <div class="items"><a href="#">سرویس خواب یک نفره</a></div>
+                            <div class="items"><a href="#">سرویس خواب دو نفره</a></div>
+                            <div class="items"><a href="#">سرویس خواب سلطنتی</a></div>
+                            <div class="items"><a href="#">تشک</a></div>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseThree">
+                            <a href="#">میز</a>
+                          </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <div class="items"><a href="#">میز تلویزیون</a></div>
+                            <div class="items"><a href="#">میز ناهار خوری</a></div>
+                            <div class="items"><a href="#">میز جلو مبلی و عسلی</a></div>
+                            <div class="items"><a href="#">آینه و میز کنسول</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseThree">
+                           <a href="#">مبلمان منزل</a>
+                          </button>
+                        </h2>
+                        <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <div class="items"><a href="#">تمامی مبلمان منزل</a></div>
+                            <div class="items"><a href="#">مبل راحتی</a></div>
+                            <div class="items"><a href="#">مبل سلطنتی</a></div>
+                            <div class="items"><a href="#">مبل ال</a></div>
+                            <div class="items"><a href="#">مبل چرم</a></div>
+                            <div class="items"><a href="#">مبل روشن</a></div>
+                            <div class="items"><a href="">مبل تیره</a></div>
+                            <div class="items"><a href="">مبل تاشو</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEite" aria-expanded="false" aria-controls="flush-collapseThree">
+                            <a href="#">مبلمان اداری</a>
+                          </button>
+                        </h2>
+                        <div id="flush-collapseEite" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <div class="items"><a href="#">تمامی مبلمان اداری</a></div>
+                            <div class="items"><a href="#">میز چوبی</a></div>
+                            <div class="items"><a href="#">مبل چوبی</a></div>
+                            <div class="items"><a href="#">مبل یک نفره</a></div>
+                            <div class="items"><a href="#">مبل ال چرم</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseThree">
+                            <a href="#"> دکوری</a>
+                          </button>
+                        </h2>
+                        <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">
+                            <div class="items"><a href="#">لوستر</a></div>
+                            <div class="items"><a href="#">چراغ خواب</a></div>
+                          </div>
+                        </div>
+                      </div>
+  
+  
+   
+  
+                  </div>
+                  
+            </div>
+        </div>
+        <div class="products-filter pb-5">
+            <div id="blockSearch">
+                <div class="control-search" id="jsSearch">
+                  <input type="search" placeholder="جستجو در بیش از 1000 کالا ...">
+                  <div class="sarch-logo-block">
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>  
+                </div>
+            </div>
+            <div id="dSearch" onclick="deleteSearch()"></div>
+
+            <button id="scrollToTopBtn" onclick="scrollToTop()">
+                <a href="#">
+                  <img src="./img/cat/icons8-up-squared-48.png" alt="">
+                </a>
+            </button>
+
+            <div class="chat" id="chatIcon" onclick="chatBox()">
+                <div class="tooltippp">
+                  <img src="./img/baner/icons8-chat-100.png" alt="">
+                  <span class="tooltiptexttt">پشتیبانی آنلاین</span>
+                </div>
+            </div>
+
+            <div id="chatModal" class="chatfilter">
+                <div class="box col-10 col-md-6 p-3 ">
+                  <div class="col-12 text-end px-2 close-box" onclick="closeChatBox()">
+                    <img src="./img/baner/icons8-close-48.png" alt="">
+                  </div>
+                  <div class="col-12 p-box">
+                    <p>سلام مشتری گرامی <br><br> هرگونه سوال , نظر  , پیشنهادات و انتقاداتی داشتید میتوانید در باکس زیر مطرح کنید و سپس ارسال کنید</p>
+                  </div>
+                  <div class="col-12 d-flex justify-content-center ">
+                    <div class="col-10 send-box">
+                      <textarea name="text" id="textInput" cols="30" rows="10" required></textarea>
+                      <div id="error-message">لطفا متنی را بنویسید.</div>
+                    </div>
+                    <div class="col-2 subBox">
+                      <button type="submit" onclick="validateAndRefreshh()">ارسال</button>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              <form action="">
+                <div id="filterLogin">
+                  <div class="col-10 col-md-4 login-box p-3">
+                    <div class="col-12 text-end hed-login">
+                      <img onclick="closeLogin()" src="./img/baner/icons8-close-48.png" alt="">
+                    </div>
+                    <div class="col-12 mb-4">
+                      <h4>ورود/ثبت نام</h4>
+                    </div>
+                    <div class="col-12">
+                      <p class="p-login">نام و نام خانوادگی خود را وارد کنید</p>
+                    </div>
+                    <div class="col-12 mb-4">
+                      <input id="fullName" class="input-login" type="text">
+                    </div>
+                    <div class="col-12">
+                      <p class="p-login">شماره موبایل خود را وارد کنید</p>
+                    </div>
+                    <div class="col-12 mb-4">
+                      <input  class="input-login" type="text" id="phoneNumber" maxlength="11">
+                    </div>
+                    <div class="col-12">
+                      <div id="error" class="mb-3"></div>
+                      <div id="loading" class="mb-3">درحال ارسال کد...</div>              
+                    </div>
+                    <div class="col-12 button-parent">
+                      <span   onclick="validateAndRefresh()">ارسال کد</span>
+                    </div>
+                    <div class="col-12 mt-2">
+                      <p id="errorText" style="color: red; font-size: 14px;"></p>
+                      <p id="graetText" style="color: rgb(22, 167, 22); font-size: 14px;"></p>
+                    </div>
+                    <div class="col-12 text-center">
+                      <p class="mt-4 p-link">شما با ورود و ثبت نام در مبل استار  <a href="#">شرایط و قوانین </a> مبل استار را پذیرفته اید.</p>
+                    </div>
+                  </div>
+                </div>  
+              </form>     
+              
+              <form id="formNumber">
+                <div id="fillterNumber">
+                  <div class="col-10 col-md-4 number-box p-3">
+                    <div class="col-12 text-end hed-login">
+                      <img onclick="closeNumber()" src="./img/baner/icons8-close-48.png" alt="">
+                    </div>
+                    <div class="col-12 mb-4">
+                      <h4>کد تائید را وارد کنید </h4>
+                    </div>
+                    <div class="col-12">
+                      <p class="p-login">کد ارسال شده را وارد نمایید و سپس ارسال کنید</p>
+                    </div>
+                    <div class="col-12 mb-4">
+                      <input  class="input-number" type="text"  id="userInput" required>
+                    </div>
+                    <div class="col-12">
+                      <p id="errorMessage" class="error-message"></p>
+                      <p id="successMessage" class="success-message"></p>                
+                    </div>
+                    <div class="col-12">
+                      <div id="loading">در حال تائید...</div>
+                    </div>
+                    <div class="col-12">
+                      <div id="timer">2:30</div>
+                    </div>
+                    <div class="col-12 button-parent">
+                      <span class="number-input" id="submitButton" type="submit" onclick="validateAndSubmit()">ارسال</span>
+                    </div>
+                    <div class="col-12 mt-2">
+                      <p id="errorText" style="color: red; font-size: 14px;"></p>
+                      <p id="graetText" style="color: rgb(22, 167, 22); font-size: 14px;"></p>
+                    </div>
+                    <div class="col-12 text-center">
+                    </div>
+                  </div>
+                </div>  
+              </form>      
+
+
+              <div class="container-fluid shop-parent mt-5">
+                <div class="container">
+                  <div class="col-12 pt-3 ps-2 hedder-shop">
+                    <h6 class="px-3 pb-1 d-inline " style="border-bottom:3px solid rgba(165, 94, 234,1.0); border-radius:2px;">سبد خرید</h6>
+                    <span>۲</span>
+                  </div>
+                  <div class="container shop-itmes mt-5 ">
+                    <div class="right">
+                      <img src="./img/products-img/1.jpg" alt="">
+                      <div class="col-12  d-flex justify-content-center ">
+                        <div class="parent-box-shop">
+                          <button class="btn-pro" id="incrementButtonnn"><i class="fa-solid fa-plus"></i></button>
+                          <div id="numberBoxxx">1</div>
+                          <button class="btn-pro" id="decrementButtonnn"><i class="fa-solid fa-minus"></i></i></button>
+                        </div>                        
+                    </div>
+                  </div>
+                  <div class="dovom">
+                    <h6>مبل راحتی مرداک</h6>
+                    <div  class="color-par d-flex ">
+                      <div class="color-shop d-inline-block "></div>
+                      <p>طوسی روشن</p>
+                    </div>
+                    <div class="d-flex second-par">
+                      <img src="./img/navbar-img/icons8-warranty-24.png" alt="">
+                      <p>گارانتی سلامت کالا</p>
+                    </div>
+                    <div class="d-flex second-par">
+                      <img src="./img/shop-basket/icons8-truck-64 (2).png" alt="">
+                      <p>باربری توسط مبل استار</p>
+                    </div>
+                    <div class="d-flex second-par">
+                      <img src="./img/navbar-img/icons8-customer-50.png" alt="">
+                      <p>ارسال فروشنده تا ۵ روز کاری</p>
+                    </div>
+                    <div class="last-price d-flex flex-column mt-4 ">
+                      <span>۱,۳۴۰,۰۰۰ تخفیف</span>
+                      <span>۳۵,۰۰۰,۰۰۰ تومان</span>
+                    </div>
+                  </div>
+                  <div class="bin-shopp">
+                    <img src="./img/shop-basket/icons8-recycle-bin-48 (1).png" alt="">
+                  </div>
+                  
+  
+                </div>
+                <div class="container shop-itmes ">
+                  <div class="right">
+                    <img src="./img/products-img/1.jpg" alt="">
+                    <div class="col-12  d-flex justify-content-center ">
+                      <div class="parent-box-shop">
+                        <button class="btn-pro" id="incrementButtonnnn"><i class="fa-solid fa-plus"></i></button>
+                        <div id="numberBoxxxx">1</div>
+                        <button class="btn-pro" id="decrementButtonnnn"><i class="fa-solid fa-minus"></i></i></button>
+                      </div>                        
+                  </div>
+                </div>
+                <div class="dovom">
+                  <h6>مبل راحتی مرداک</h6>
+                  <div  class="color-par d-flex ">
+                    <div class="color-shop d-inline-block "></div>
+                    <p>طوسی روشن</p>
+                  </div>
+                  <div class="d-flex second-par">
+                    <img src="./img/navbar-img/icons8-warranty-24.png" alt="">
+                    <p>گارانتی سلامت کالا</p>
+                  </div>
+                  <div class="d-flex second-par">
+                    <img src="./img/shop-basket/icons8-truck-64 (2).png" alt="">
+                    <p>باربری توسط مبل استار</p>
+                  </div>
+                  <div class="d-flex second-par">
+                    <img src="./img/navbar-img/icons8-customer-50.png" alt="">
+                    <p>ارسال فروشنده تا ۵ روز کاری</p>
+                  </div>
+                  <div class="last-price d-flex flex-column mt-4 ">
+                    <span>۱,۳۴۰,۰۰۰ تخفیف</span>
+                    <span>۳۵,۰۰۰,۰۰۰ تومان</span>
+                  </div>
+                </div>
+                <div class="bin-shopp">
+                  <img src="./img/shop-basket/icons8-recycle-bin-48 (1).png" alt="">
+                </div>
+                
+
+              </div>
+
+                
+              </div>
+
+              
+
+              
+
+              
+
+              <div class="container-fluid container-md factor  ">
+                <h6 class="px-3 pb-1 d-inline " style="border-bottom:3px solid rgba(165, 94, 234,1.0); border-radius:2px;">پرداخت</h6>
+                <div class="factor-control">
+                  <div class="col-12 col-md-8 col-lg-6 factor-box">
+                    <div class="col-12 d-flex justify-content-around pt-4 first">
+                      <p>قیمت کالا ها(۲) </p>
+                      <p>۷۰,۰۰۰,۰۰۰ تومان</p>
+                    </div>
+                    <div class="col-12 col-12 d-flex justify-content-around pt-2 second">
+                      <p>جمع سبد خرید</p>
+                      <p>۶۸,۰۰۰,۰۰۰ تومان</p>
+                    </div>
+                    <div class="col-12 col-12 d-flex justify-content-around pt-2 third">
+                      <p>سود شما از خرید</p>
+                      <p>(۵٪)۲,۰۰۰,۰۰۰ تومان </p>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center mt-2 ford-parent">
+                      <div class="col-10 col-md-6 text-center mt-4 ford ">
+                        <button class="w-100" type="submit">تایید و تکمیل سفارش</button>
+                      </div>
+                    </div>
+                  </div>  
+                </div>
+              </div>
+
+              
+              
+            </div>
+            <div class=" cat-main d-flex justify-content-center ">
+              <div class="container-fluid container-md   row row-cols-2 row-cols-md-2 row-cols-lg-4 ">
+                  <div class="col  d-flex align-items-center justify-content-center  my-2 cat-child ">
+                    <img class="truck" src="./img/cat/icons8-transportation-64.png" alt="">
+                    <p class="ms-2 p-cat ">تحویل دری منزل <br> <span>سریع و آسان</span> </p>
+                  </div>
+                  <div class="col  d-flex align-items-center justify-content-center my-2 cat-child">
+                    <img src="./img/cat/icons8-factory-50.png" alt="">
+                    <p class="ms-2 p-cat ">از کارخانه تا خانه <br> <span> کیفیت عالی</span> </p>
+                  </div>
+                  <div class="col  d-flex align-items-center justify-content-center my-2 cat-child">
+                    <img src="./img/cat/icons8-palette-64.png" alt="">
+                    <p class="ms-2 p-cat "> تنوع رتگ بالا<br> <span>رنگ های روز </span> </p>
+                  </div>
+                  <div class="col  d-flex align-items-center justify-content-center my-2 cat-child">
+                    <img src="./img/cat/icons8-guarantee-50.png" alt="">
+                    <p class="ms-2 p-cat ">تضمین کیفیت  <br> <span> بالاترین کیفیت   </span> </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="navbarr d-flex d-lg-none">
+              <div class="col  items-nav">
+                <a href="./indext.html">
+                  <img src="./img/navbar-img/icons8-home-50 (1).png" alt="">
+                  <span>خانه</span>  
+                </a>
+              </div>
+              <div class="col  items-nav" onclick="oMenu()">
+                  <img src="./img/navbar-img/icons8-category-50 (1).png" alt="">
+                  <span>دسته بندی</span>  
+              </div>
+              <div class="col items-nav">
+                <a href="#" >
+                  <img src="./img/navbar-img/icons8-cart-64.png" alt="">
+                  <span style="border-bottom: 2px solid rgba(165, 94, 234,1.0); padding: 0 10px;">سبد خرید</span>  
+                </a>
+              </div>
+              <div class="col  items-nav">
+                <a href="./call.html">
+                  <img src="./img/navbar-img/icons8-call-50 (1).png" alt="">
+                  <span>تماس با ما</span>  
+                </a>
+              </div>  
+          </div>
+
+    </div>
+
+
+
+    <div class="container-fluid footer p-5">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 justify-content-center ">
+          <div class="col d-flex flex-column justify-content-center text-center another my-2">
+            <h5>دسترسی های سریع</h5>
+            <span><a href="./call.html" >تماس با ما</a></span>
+            <span><a href="#">درباره مبل استار</a></span>
+            <span><a href="#">اعضای تیم میب استار</a></span>
+            <span><a href="#">نحوه ارسال</a></span>
+            <span><a href="./indext.html">صفحه اصلی</a></span>
+          </div>
+          <div class="col d-flex logo-writer justify-content-center  my-4">
+            <img class="m-2" src="./img/logo/icons8-instagram-50 (4).png " alt="">
+            <img class="m-2" src="./img/logo/icons8-telegram-50 (3).png" alt="">
+            <img class="m-2" src="./img/logo/icons8-whatsapp-50 (3).png" alt="">
+      </div>
+          <div class="col d-flex align-content-center justify-content-center logo-parent my-2">
+            <img src="./img/logo/logo (1).png" alt="">
+          </div>
+          <div class="col d-flex align-content-center justify-content-center logo-parent my-2">
+            <img src="./img/logo/logo.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid footer last-footerr ">
+      <div class="container d-flex justify-content-center py-3 ">
+        <div class="col-12 col-md-8 col-lg-6 text-center last-footer ">
+          <p>تمامی حقوق این وبسایت متعلق به مبل استار است.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
